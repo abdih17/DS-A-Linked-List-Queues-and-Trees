@@ -4,12 +4,12 @@ function Node(val) {
   this.val = val;
   this.prev = null;
   this.next = null;
-};
+}
 
 function DoublyLinkedList() {
   this.head = null;
   this.tail = null;
-};
+}
 
 DoublyLinkedList.prototype.prepend = function(val) {
   let node = new Node(val);
@@ -18,7 +18,7 @@ DoublyLinkedList.prototype.prepend = function(val) {
     this.head = node;
     this.tail = node;
     return node.val;
-  };
+  }
 
   node.next = this.head;
   this.head.prev = node;
@@ -34,7 +34,7 @@ DoublyLinkedList.prototype.append = function(val) {
     this.head = node;
     this.tail = node;
     return node.val;
-  };
+  }
 
   node.prev = this.tail;
   this.tail.next = node;

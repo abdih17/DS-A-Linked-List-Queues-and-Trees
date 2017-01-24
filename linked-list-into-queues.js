@@ -1,22 +1,32 @@
 'use strict';
 
-const queues = require('./singly-linked-list.js');
+const SinglyLinkedList = require('./singly-linked-list.js');
 
-var current = 0;
+module.exports = Queue;
 
-// node constructor
 function Node(val) {
   this.val = val;
   this.next = null;
 }
 
-queues.prototype.enqueue = function(val) {
-  const node = new Node();
-  this.tail = node;
+function Queue() {
+  this.sll = new SinglyLinkedList();
+}
+
+Queue.prototype.enqueue = function(val) {
+  let node = new Node(val);
+
+  if(!this.head) {
+    this.head = node;
+    this.tail = node;
+  } else {
+    this.tail.next = node;
+    this.tail = node;
+  }
 };
 
-queues.prototype.dequeue = function() {
-  current = head;
-  head = current.next;
+Queue.prototype.dequeue = function() {
+  let current = this.head;
+  this.head = this.head.next;
   return current.val;
 };

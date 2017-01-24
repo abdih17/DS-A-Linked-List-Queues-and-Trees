@@ -1,4 +1,4 @@
-const Queue = require('./queue');
+const Queue = require('./linked-list-into-queues.js');
 
 let q = new Queue();
 q.enqueue('good');
@@ -14,10 +14,10 @@ console.assert(q.dequeue() == 'good', 'Dequeued unexpected value');
 console.assert(q.dequeue() == 'night', 'Dequeued unexpected value');
 console.assert(q.dequeue() == 'moon', 'Dequeued unexpected value');
 
-q.enqueue('by')
-q.enqueue('margret')
-q.enqueue('wise')
-q.enqueue('brown')
+q.enqueue('by');
+q.enqueue('margret');
+q.enqueue('wise');
+q.enqueue('brown');
 
 console.assert(q.dequeue() == 'good', 'Dequeued unexpected value');
 console.assert(q.dequeue() == 'night', 'Dequeued unexpected value');

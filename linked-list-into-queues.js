@@ -16,17 +16,17 @@ function Queue() {
 Queue.prototype.enqueue = function(val) {
   let node = new Node(val);
 
-  if(!this.head) {
-    this.head = node;
-    this.tail = node;
+  if(!this.sll.head) {
+    this.sll.head = node;
+    this.sll.tail = node;
   } else {
-    this.tail.next = node;
-    this.tail = node;
+    this.sll.tail.next = node;
+    this.sll.tail = node;
   }
 };
 
 Queue.prototype.dequeue = function() {
-  let current = this.head;
-  this.head = this.head.next;
+  let current = this.sll.head;
+  this.sll.head = this.sll.head.next;
   return current.val;
 };

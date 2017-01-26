@@ -1,34 +1,32 @@
 'use strict';
 
-const SinglyLinkedList = require('./singly-linked-list.js');
+const Queue = require('./linked-list-into-queues.js');
 
-module.exports = Queue;
+module.exports = Tree;
 
 function Tree (val) {
   this.val = val;
   this.children = [];
 }
 
-function Queue() {
-  this.sll = new SinglyLinkedList();
-}
-
-Tree.prototype.print = function(val) {
-  let Queue = new Queue();
+Tree.prototype.print = function() {
+  let queue = new Queue();
+  let q = [];
 
   if(!this.val) {
     return;
   }
 
-  Queue.enqueue(this);
+  queue.enqueue(this);
 
-  while(Queue.sll.head) {
-    const node = Queue.dequeue();
+  while(queue.sll.head) {
+    const node = queue.dequeue();
+    q.push(node.val);
     console.log(node.val);
 
-    for(var i = 0; i < this.children.length; i++) {
-      Queue.enqueue(this.children[i]);
-      return val;
+    for(var i = 0; i < node.children.length; i++) {
+      queue.enqueue(node.children[i]);
     }
   }
+  return q;
 };

@@ -1,5 +1,7 @@
 'use strict';
 
+module.exports = Queue;
+
 // queue constructor
 function Queue() {
   this.next = null;
@@ -24,24 +26,24 @@ Queue.prototype.dequeue = function() {
 };
 
 // create new queue object
-let nums = new Queue();
+//let nums = new Queue();
 
 // add a sequence of elements to the queue
-nums.enqueue('first');
-nums.enqueue('second');
-nums.enqueue('third');
+// nums.enqueue('first');
+// nums.enqueue('second');
+// nums.enqueue('third');
 
 // log the current nums queue
-console.log('\nnums queue:', nums);
+//console.log('\nnums queue:', nums);
 
 // remove an element from the queue
-console.log('\nremoved the', nums.dequeue(), 'element from the queue\n');
+//console.log('\nremoved the', nums.dequeue(), 'element from the queue\n');
 
 // show queue after removal
-console.log('new queue:', nums);
+//console.log('new queue:', nums);
 
 // remove another element from the queue
-console.log('\nremoved the', nums.dequeue(), 'element from the queue\n');
+//console.log('\nremoved the', nums.dequeue(), 'element from the queue\n');
 
 // show queue after removal
-console.log('new queue:', nums, '\n');
+//console.log('new queue:', nums, '\n');

@@ -4,7 +4,7 @@
 
 With a pair during our whiteboard challenge session, we implemented queue data structure with a singly linked list structure. After completing the challenge, we were able to have an O(1) time complexity.
 
-Whiteboard on Jan. 24th, 2017: ![Alt text](./images/whiteboard1.jpg? "First Whiteboard Challenge")
+Whiteboard on Jan. 24th, 2017: ![Alt text](./images/whiteboard1.JPG? "First Whiteboard Challenge")
 
 ------------------------------------------------------------------------------------------
 
@@ -12,4 +12,4 @@ Whiteboard on Jan. 24th, 2017: ![Alt text](./images/whiteboard1.jpg? "First Whit
 
 In this assignment, the challenge was to print the value of each node in a tree.
 
-Whiteboard on Jan. 25th, 2017: ![Alt text](./images/whiteboard2.jpg? "Second Whiteboard Challenge")
+Whiteboard on Jan. 25th, 2017: ![Alt text](./images/whiteboard2.JPG? "Second Whiteboard Challenge")
